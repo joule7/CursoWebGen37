@@ -1,0 +1,33 @@
+.titulos-principales, footer{ /*selector de clase y de etiqueta*/
+	background-color: #850E27;
+	text-align: center;/*centra el texto*/
+}
+
+h1{
+	color: white;
+}
+
+#menu-navegacion {/*selector id*/
+	text-align: center;/*centra el texto*/
+}
+
+
+a{
+	text-decoration: none; /*quita el formato*/
+}
+
+h2{
+	text-align: center;/*Centra el texto*/
+}
+
+li{
+	display: inline;/*Se explicara en la siguiente clase*/
+}
+
+ul{
+	list-style: none;/*quita el formato*/
+}
+
+footer ul li a{ /*Selector descendente*/
+	color: white;
+}
