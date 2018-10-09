@@ -1,0 +1,35 @@
+body{
+	background-color: #F1F1F1
+}
+
+h1{
+	position: static;
+	top: 200px;
+	right: 200px;
+}
+
+.pos{
+	position: static;
+
+}
+
+.pos1{
+	position: relative;
+	left: 100px;
+	right: 100px;
+	top: 100px;
+	bottom: 100px;
+	padding: 20px;
+}
+
+.pos2{
+	position: fixed;
+	left: 200px;
+	right: 200px;
+	top: 200px;
+	bottom: 200px;	
+}
+
+.pos3{
+	position: inherit;
+}
