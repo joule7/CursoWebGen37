@@ -1,0 +1,101 @@
+.modeladoLogo{
+	/*padding-right: auto;*/
+	padding-right: 600px;
+	padding-top: 30px;
+	padding-left: 600px;
+	padding-bottom: 30px;
+	background: #F38010;
+	width: 130px;
+	height: 130px;
+}
+
+
+.titulo{
+	text-align: center;
+	font-size: 30px;
+}
+
+.subtitulo{
+	text-align: center;
+	font-style: italic;
+}
+
+.parrafo1{
+	margin: 10px 50px;
+	padding: 20px;
+	border-width: 15px;
+	border-style: ridge;
+	border-color: #3CB61B;
+	text-align: justify;
+}
+
+.parrafo2{
+	margin: 10px 20px;
+	padding: 40px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #8B0DB5;
+	text-align: justify;
+}
+
+.parrafo3{
+	margin: 15px 45px;
+	padding: 10px;
+	border-width: 10px;
+	border-style: groove;
+	border-color: #2268A3;
+	text-align: justify;
+}
+
+
+.imagen1{
+	margin: 30px 250px;
+	padding: 50px;
+	justify-content: center;
+	text-align: center;
+	background: #78FFF7;
+	border-style: solid;
+	border-color: #FB0505;
+	border-width: 10px;
+}
+
+.imagen2{
+	margin: 10px;
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+	background: #78FFF7;
+	border-style: solid;
+	border-color: #F4FC0D;
+	border-width: 10px;
+}
+
+img {
+	width: 80%;
+	height: auto;
+}
+
+body{
+	 background-color: #96D4FF;
+}
+.imagen3{
+	margin: 10px;
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+	background: #4ED4B6;
+	border-style: solid;
+	border-color: #1023D8;
+	border-width: 10px;
+}
+
+.imagen4{
+	margin: 10px;
+	padding: 5px;
+	justify-content: center;
+	text-align: center;
+	background: #B330CF;
+	border-style: solid;
+	border-color: #41066E;
+	border-width: 10px;
+}

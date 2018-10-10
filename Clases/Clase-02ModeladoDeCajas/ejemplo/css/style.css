@@ -1,0 +1,43 @@
+.caja1{
+	background: #419CE3;
+
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.caja2{
+	background: #13E3F6;
+	margin: 60px;
+	padding: 60px;
+}
+
+.caja3{
+
+	background: #D3B301;
+	margin: 40px;
+	
+	/*Podemos personalizar cada lado de la caja*/
+	border-top-style: double;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: dashed;
+    border-width: 20px;
+    box-sizing: border-box;
+}
+
+.caja4{
+	margin: 50px;
+	padding: 70px;
+	border-style: groove;
+	border-color: #EF1010;
+	border-width: 30px;
+	border-radius: 50px;
+}
+
