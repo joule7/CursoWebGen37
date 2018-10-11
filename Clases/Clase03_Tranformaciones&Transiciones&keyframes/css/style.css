@@ -153,7 +153,7 @@ para eso son los hovers: para cuando pasamos el mouse sobre la etiqueta
 	transition: width 3s, background 3s;
 }
 .arena2:hover
-{
+{ /*aquí el truco con el cual se vuelve un caos cuando pasan el mouse sobre el óvalo*/
 	background: white;
 	height: 150px;
 	width: 100px;
