@@ -1,0 +1,29 @@
+/****************CSS para selectores hijo*/
+/*Parte 1*/
+p > span { color: red; }
+/*Parte 2*/
+p a { color: red; }
+p > a { color: blue; }
+/****************CSS para selectores adyacentes*/
+/*Ejemplo1*/
+h2 { color: green; }
+h1 + h2 { color: red }
+/*Ejemplo2*/
+p + p { text-indent: 1.5em; }
+
+/****************CSS para selectores de atributos*/
+/*Caso 1 Se muestran de color naranja todos los enlaces que tengan 
+   un atributo "class", independientemente de su valor */
+p[class] { color: orange; }
+/*Caso 2 Se muestran de color azul todos los enlaces que tengan 
+   un atributo "class" con el valor "clase2" */
+p[class="clase2"] { color: blue; }
+/*Caso 2 Se muestran de color rosa todos los enlaces que apunten 
+   al sitio "#" */
+a[href="#"] { color: pink; }
+/*Caso 3 Se muestran de color morado todos los enlaces que tengan 
+   un atributo "class" en el que al menos uno de sus valores
+   sea "estilo2" */
+a[class~="estilo2"] { color: purple; }
+a[class="estilo1"] { color: green; }
+
