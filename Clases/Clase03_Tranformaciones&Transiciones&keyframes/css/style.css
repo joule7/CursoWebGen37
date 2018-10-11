@@ -1,0 +1,163 @@
+body
+{
+	background: #043754;
+}
+/*Selectores de etiqueta*/
+h1
+{
+	color: white;
+	text-align: center;
+}
+h2
+{
+	color: red;
+	text-align: center;
+}
+div
+{
+	margin: auto;
+}
+/*---------------------*/
+.cuadrado
+{
+	width: 50px;
+	height: 50px;
+	background: red;
+	animation-name: cuadrado; /*asignación de la animación o "keyframe a utilizar"*/
+	animation-duration: 3s; /*el tiempo que durará la animación*/
+	animation-iteration-count: infinite;
+}
+.cuadrado:hover
+{
+	width: 700px;
+	height: 50px;
+	transition: width 2s, height 2s; /*se le asignan las propiedades que quieren que cambie y en cuánto tiempo*/
+	background: black;
+}
+@keyframes cuadrado
+{	/*Comienza la animación "cuadrado"*/
+	0%{background-color: red;width: 75px;} /*uds definen en qué porcentaje de toda la animación quieren que pase X cosa*/
+	25%{background-color: yellow;width: 195px;} /*Dentro de los corchetes ponen todo lo que quieren que cambie X2*/
+	50%{background-color: blue;width: 295px;}
+	100%{background-color: green;width: 195px;}
+}
+
+.triangulo
+{
+	height: 0;
+	width: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid blue;
+	position: relative;
+	animation-name: triangulo;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+@keyframes triangulo
+{
+	0%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid blue; left: 0px; top: 0px;}
+	25%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid blue; left: 0px; top: -10px;}
+	50%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid blue; left: 200px; top: 150px;}
+	75%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid blue; left: -200px; top: 150px;}
+	100%{border-left: 50px solid transparent; border-right: 50px solid transparent; border-bottom: 50px solid blue; left: 0px; top: 0px;}
+}
+.circulo
+{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: orange;
+	animation: circulo 1s linear 2s infinite;
+}
+@keyframes circulo
+{	/*para la sombras se reciben 4 parámetros, los más importantes son los dos primeros
+	los cuales el primero es el eje X y el segundo el eje Y, por así decirlo.
+	Dicen la posición de donde partirán las sombras y a dónde llegarán, en este caso,
+	le puse solamente al eje X valores para que se vea un efecto horizontal. Jueguen con ellos*/
+	from{box-shadow:
+		100px 0 0 0 red,
+		200px 0 0 5 black,
+		300px 0 0 0 white,
+		400px 0 0 0 red,
+		500px 0 0 0 black,
+		700px 0 0 0 white,
+		900px 0 0 5 white;}
+	to{box-shadow:
+		0px 0 0 0 black,
+		-250px 0 0 0 brown,
+		500px 0 0 0 black,
+		-250px 0 0 0 brown,
+		900px 0 0 0 black,
+		-1100px 0 0 0 brown;}
+}
+.ovalo
+{
+	border-radius: 50%;
+	width: 200px;
+	height: 100px;
+	transition: width 2s, height 2s;
+	background: red;
+	position: relative;
+	animation: ovalo 0.1s infinite;
+}
+.ovalo:hover
+{
+	border-radius: 50%;
+	width: 900px;
+	height: 450px;
+	background: red;
+	transition: width 2s, height 2s;
+	position: relative;
+	animation: ovalo 0.1s infinite;
+}
+@keyframes ovalo
+{	/*un óvalo normal que va rotanto, el truco está en el tiempo para ponerlo 
+	bien psicodélico. Buzos.*/
+	0% {transform: rotate(0deg);left: 0px; background-color: white;}
+	25% {transform: rotate(45deg);left: 0px; background-color: white;}
+	50% {transform: rotate(90deg);left: 0px; background-color: black;}
+	75% {transform: rotate(135deg);left: 0px; background-color: black;}
+	100% {transform: rotate(180deg);left: 0px; background-color: white;}
+}
+/*******Con imaginación es un reloj de arena que cambia de formita
+para eso son los hovers: para cuando pasamos el mouse sobre la etiqueta
+**********************************/
+.arena
+{
+	margin: 60px 50px;
+}
+.arena1
+{
+	background: white;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px 100px 0 0;
+	transition: width 3s, background 3s;
+}
+.arena2
+{
+	background: black;
+	height: 100px;
+	width: 200px;
+	border-radius: 0 0 100px 100px;
+	transition: width 3s, background 3s;
+}
+.arena1:hover
+{
+	background: black;
+	height: 100px;
+	width: 200px;
+	border-radius: 100px 100px 0 0;
+	width: 300px;
+	transition: width 3s, background 3s;
+}
+.arena2:hover
+{
+	background: white;
+	height: 150px;
+	width: 100px;
+	border-radius: 0 0 100px 100px;
+	transition: height 2s, width 3s, background 3s;
+}
+/*************************************************************/
