@@ -21,6 +21,6 @@ Consideraciones:
 - El CV deberá tener su imagen personal para poder ser calificado y/o ser reconocidos.
 - Subir el proyecto a GitHub-Pages.
 
-![html5](https://goo.gl/images/EhJLHT)
+![html5](https://github.com/joule7/CursoWebGen37/blob/master/Clases/Clase03Web/TareaClase03/images/hcj.jpg)
 
 > *La experiencia es la madre de todas las cosas* - Julio César
