@@ -18,6 +18,8 @@ Consideraciones:
 - Usar la API de Twitter.
 - Usar la API de Instagram.
 - Todo el back en PHP.
+- Deberá tener un botón de su perfil de github (Botónes github)
+- Subir el proyecto en un repo, se evaluarán los commits de cada integrante
 - Subir el proyecto a 000WebHost.
 
 ![WEB](https://github.com/joule7/OXXO/blob/gh-pages/img/proy2.png)
