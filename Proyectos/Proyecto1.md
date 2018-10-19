@@ -2,6 +2,8 @@
 
 Utilizando *todos* los conceptos aprendidos durante la primera semana, hacer un **sitio Web** de su CV, este proyecto es de forma **individual** 
 
+**Fecha de entrega: *21/10/18 - 23:59:59* **
+
 Consideraciones:
 
 - Hacer el maquetado en Balsamic (subir el pdf).
