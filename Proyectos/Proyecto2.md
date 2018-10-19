@@ -24,4 +24,4 @@ Consideraciones:
 
 ![WEB](https://github.com/joule7/OXXO/blob/gh-pages/img/proy2.png)
 
-> *"La experiencia es la madre de todas las cosas"* - Julio César
+> *"Nada es tan difícil que no se pueda conseguir con fortaleza"* - Julio César
