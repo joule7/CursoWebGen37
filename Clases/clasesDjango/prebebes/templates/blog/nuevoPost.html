@@ -8,9 +8,7 @@ Nuevo post
 <div class="container">
 	<form method="POST">
 		{% csrf_token %}	
-
 		{{ form.as_p }}
-
 		<button type="submit" class="btn"> Postear</button>
 	</form>
 </div>

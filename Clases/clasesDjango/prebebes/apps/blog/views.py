@@ -25,7 +25,7 @@ def nuevoPost(request):
 			post.autor = request.user
 			post.fechaPublicacion = timezone.now()
 			post.save()
-			return redirect('nuevo',pk=post.pk)
+			return redirect('detalles',pk=post.pk)
 	else:
 		form = PostFormulario()
 	return render(request, 'blog/nuevoPost.html',{'form':form})
