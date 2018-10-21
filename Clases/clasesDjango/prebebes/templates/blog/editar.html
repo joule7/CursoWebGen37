@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Editar
+{% endblock titulo %}
+
+{% block content %}
+	<div class="container">
+	<center><h4>Editar</h4></center>
+    <form method="POST" class="post-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Guardar</button>
+    </form>
+    </div>
+{% endblock %}

@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Django 2.1.2</title>
-</head>
-<body>
-	¡ Hola prebes, si les salio?
-</body>
-</html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block titulo %}
+    Inicio
+{% endblock titulo %}
+
+
+
+{% block content %}
+    <div class="container">
+    	<center>
+		<h1 class="index">Bienvenido a mi blog</h1>
+		<img src="{% static 'img/kubos.png' %}" alt="Me">
+		</center>
+    </div>
+
+{% endblock content %}
+
+
+

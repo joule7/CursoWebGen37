@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Nuevo post
+{% endblock titulo %}
+
+{% block content %}
+<div class="container">
+	<form method="POST">
+		{% csrf_token %}	
+
+		{{ form.as_p }}
+
+		<button type="submit" class="btn"> Postear</button>
+	</form>
+</div>
+{% endblock content %}

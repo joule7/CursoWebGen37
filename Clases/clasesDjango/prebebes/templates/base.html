@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	<title>
+    {% block titulo %}
+    
+    {% endblock titulo %}
+  </title>
+  <link rel="shorcut icon" href="{% static 'img/django.png' %}">
+  <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <!--Elementos del dropdown de posts-->
+  <ul id="dropdown1" class="dropdown-content">
+  <li><a style="color: black;" href="{% url 'listado' %}">Ver posts</a></li>
+  <li><a style="color: black;" href="{% url 'nuevo' %}">Agregar post</a></li>
+  <li class="divider"></li>
+</ul>
+  <!--Fin de elementos del dropdown-->
+
+  <!--Inicio barra de navegación-->
+  <nav >
+    <div class="nav-wrapper navbar-fixed grey lighten-5">
+      <a href="{% url 'inicio' %}" class="brand-logo"><img  class="ajustaLogo" src="{% static 'img/django.png' %}" alt="Logo de Django"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i style="color: black;" class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a style="color: black;" href="{% url 'inicio' %} ">Inicio</a></li>
+        <li><a style="color: black;" class="dropdown-trigger" href="#!" data-target="dropdown1">Posts<i class="material-icons right">arrow_drop_down</i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+      <li><a style="color: black;" href="{% url 'inicio' %} ">Inicio</a></li>
+      <li><a style="color: black;" href="{% url 'listado' %} ">Posts</a></li>
+
+  </ul>
+  <!--Fin de barra de navegación-->
+  <main>
+   {% block content %}
+
+   {% endblock content %}
+ </main>
+<!--Inicio footer-->
+        <footer class="page-footer green lighten-1">
+          <div class="footer-copyright">
+            <div class="container">
+            <div class="row">
+              <div class="col m4"><p>
+            
+<a class="github-button" href="https://github.com/kubos777/blogDjango/archive/master.zip" data-size="large" aria-label="Download kubos777/blogDjango on GitHub">Download</a>
+</p></div>
+            <div class="col m4 offset-m4"><a class="grey-text text-lighten-4 right" href="http://zonakubos.com">Zona kubOS</a>
+            <span >© 2018 PROTECO </span>
+            </div>
+            </div>
+            
+            </div>
+          </div>
+        </footer>
+<!--Fin footer-->
+
+
+</body>
+<script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+<script src="{% static 'js/materialize.min.js' %}"></script>
+<script src="{% static 'js/app.js'%}"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</html>
