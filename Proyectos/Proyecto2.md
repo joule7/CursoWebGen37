@@ -2,6 +2,9 @@
 
 Utilizando *todos* los conceptos aprendidos durante la segunda semana, hacer un **sitio Web** de una tienda, este proyecto es en **equipo** 
 
+**Fecha de entrega: 08/11/18 - 16:00:00**
+**Este jueves 8 de noviembre es el día en que después de la hora prebe, calificaré este segundo proyecto junto con el primero**
+
 Consideraciones:
 
 - La tienda debera tener un login y registro de usuarios.
