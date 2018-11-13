@@ -19,7 +19,7 @@ Consideraciones:
 - J Usar la API de Facebook.
 - K Usar la API de Intragram.
 - L Usar la API de Twitter.
-- M Usar la API de Instagram.
+- M DISEÑO.
 - N Todo el back en PHP.
 - O Deberá tener un botón de su perfil de github (Botónes github)
 - P Subir el proyecto en un repo, se evaluarán los commits de cada integrante
